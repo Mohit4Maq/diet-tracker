@@ -1,0 +1,52 @@
+{
+  "userGoals": {
+    "cal": 2200,
+    "protein": 150,
+    "carbs": 250,
+    "fat": 65
+  },
+  "meals": {
+    "Breakfast": [],
+    "Lunch": [],
+    "Snack": [],
+    "Dinner": []
+  },
+  "weekLog": [
+    {
+      "day": "Mon",
+      "cal": 1650,
+      "protein": 118
+    },
+    {
+      "day": "Tue",
+      "cal": 1720,
+      "protein": 125
+    },
+    {
+      "day": "Wed",
+      "cal": 1580,
+      "protein": 110
+    },
+    {
+      "day": "Thu",
+      "cal": 1800,
+      "protein": 132
+    },
+    {
+      "day": "Fri",
+      "cal": 1690,
+      "protein": 121
+    },
+    {
+      "day": "Sat",
+      "cal": 1900,
+      "protein": 140
+    },
+    {
+      "day": "Sun",
+      "cal": 0,
+      "protein": 0
+    }
+  ],
+  "selectedPlan": null
+}
