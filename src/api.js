@@ -1,12 +1,16 @@
 import axios from 'axios';
 
-// API Base URL - automatically detects if running on network
+// API Base URL - automatically detects environment
 const getBaseURL = () => {
-  const hostname = window.location.hostname;
-  // If accessing from network (not localhost), use network IP
-  if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
-    return `http://${hostname}:5001/api`;
+  // Production backend URL (Render)
+  const PRODUCTION_API = 'https://diet-tracker-7h04.onrender.com/api';
+
+  // If in production (deployed), use production backend
+  if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return PRODUCTION_API;
   }
+
+  // Local development - use localhost backend
   return 'http://localhost:5001/api';
 };
 
